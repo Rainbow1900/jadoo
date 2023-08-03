@@ -148,7 +148,7 @@ h6 {
 /* Include fonts */
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -156,21 +156,21 @@ h6 {
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
   
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
 	font-family: 'Volkhov';
-	src: url('/fonts/Volkhov-Bold.ttf') format('truetype');
+	src: url('../fonts/Volkhov-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -591,6 +591,38 @@ h6 {
 .home-subscribe {
 	@include adaptiv-value('padding-bottom', 175, 70, 1);
 	&__container {
+		position: relative;
+		&::before { 
+			content: '';
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			top: -13px;
+			right: -14px;
+			background-image: url('../img/icon-form.svg');
+			background-repeat: no-repeat;
+			background-size: 70px;
+			z-index: 20;
+			@media(max-width: 1024px) {
+				right: 0;
+			}
+		}
+
+		&:after { 
+			content: '';
+			position: absolute;
+			width: 153px;
+			height: 166px;
+			bottom: -75px;
+			right: -100px;
+			background-image: url('../img/jadoo-img-05.webp');
+			background-repeat: no-repeat;
+			background-size: 153px;
+			z-index: 20;
+			@media(max-width: 1024px) {
+				display: none;
+			}
+		}
 	}
 
 	&__body {
