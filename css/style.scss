@@ -253,7 +253,7 @@ h6 {
 			display: none;
 		}
 
-		background-image: url('./img/burger-icon.svg');
+		background-image: url('../img/burger-icon.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		width: 30px;
@@ -262,7 +262,7 @@ h6 {
 		position: relative;
 		margin-left: 20px;
 		&._active { 
-			background-image: url('./img/burger-icon-close.svg');
+			background-image: url('../img/burger-icon-close.svg');
 		}
 	}
 }
@@ -360,7 +360,7 @@ h6 {
 		right: 0px;
 		width: 11px;
 		height: 6px;
-		background-image: url('./img/arrow-down.svg');
+		background-image: url('../img/arrow-down.svg');
 		background-repeat: no-repeat;
 		background-size: 10px;
 	}
@@ -404,7 +404,7 @@ h6 {
 
 /* Section home-hero */
 .home-hero {
-	background-image: url('./img/jadoo-img-back.webp');
+	background-image: url('../img/jadoo-img-back.webp');
 	background-repeat: no-repeat;
 	@include adaptiv-value('background-size', 766, 300, 1);
 	background-position: top right;
@@ -612,7 +612,7 @@ h6 {
 			height: 100%;
 			left: 0;
 			bottom: 0;
-			background-image: url('./img/jadoo-img-04.webp');
+			background-image: url('../img/jadoo-img-04.webp');
 			background-repeat: no-repeat;
 			background-size: 100%;
 			background-position: 20px bottom;
@@ -630,7 +630,7 @@ h6 {
 			height: 100%;
 			right: 0;
 			top: 0;
-			background-image: url('./img/jadoo-img-03.webp');
+			background-image: url('../img/jadoo-img-03.webp');
 			background-repeat: no-repeat;
 			background-size: 100%;
 			background-position: bottom left;
@@ -731,7 +731,7 @@ h6 {
 		border: 1px solid #fff;
 
 		padding: 22px 22px 22px 65px;
-		background-image: url('./img/letter.svg');
+		background-image: url('../img/letter.svg');
 		background-position: 30px center;
 		background-repeat: no-repeat;
 		background-size: 26px;
